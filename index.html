@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonShop - Boost Your Shopify Store</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logonav"><img src="images/logo_dark.png" alt="" style="scale: 0.9;"></div>
+    <div class="nav-links" id="navLinks">
+        
+        <a href="#service">Services</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#price">Pricing</a>
+    </div>
+    <a href="#contact" class="cta-button" style="text-decoration: none;">Contact Us</a>
+    <div class="menu-icon" onclick="toggleMenu()" style="color: black;">☰</div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+    }
+</script>
+  
+    <section class="hero" style="display: flex;margin-bottom: 50px;">
+      <div class="hero-section">
+        <h1>
+          <span class="highlight" id="mainText">We Build</span>
+          <span class="static-text" id="staticText">Websites</span>
+          
+      </h1>
+      <h2 id="subText">E-commerce Brands</h2>
+        <p>We are a team of skilled professionals with expertise in marketing and branding. With over 1.5 years of experience, we have been dedicated to helping brands grow and succeed.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Book a call</a>
+            <a href="#Portfolio" class="btn btn-secondary">View Projects</a>
+        </div>
+        <div>
+            <span class="rating">★★★★★</span><br>
+            <span class="clients" >Worked with 12+ Companies</span>
+        </div>
+    </div>
+    <!-- <div class="illustration1">
+      <img src="images/hero_illustrate.png" alt="" style="top: 20px;">
+    </div> -->
+    </section>
+
+    <script>
+      const mainTextEl = document.getElementById('mainText');
+      const staticTextEl = document.getElementById('staticText');
+      const subTextEl = document.getElementById('subText');
+      const allElements = [mainTextEl, staticTextEl, document.querySelector('.static-text:last-child'), subTextEl];
+      
+      const textOptions = [
+      { main: 'We Build', static: 'CRO-optimized websites', sub: 'To Increase Sales' },
+          { main: 'We Design', static: 'branding strategies', sub: 'For Brands' },
+          
+          { main: 'We Do', static: 'CGI Marketing', sub: 'For Brands' }
+      ];
+      
+      let currentIndex = 0;
+
+      function animateText() {
+          // Animate out
+          allElements.forEach((el, index) => {
+              el.classList.remove('animate-in-up', 'animate-in-down');
+              el.classList.add(index < 3 ? 'animate-out-up' : 'animate-out-down');
+          });
+          
+          setTimeout(() => {
+              // Change text
+              currentIndex = (currentIndex + 1) % textOptions.length;
+              const { main, static, sub } = textOptions[currentIndex];
+              mainTextEl.textContent = main;
+              staticTextEl.textContent = static;
+              subTextEl.textContent = sub;
+              
+              // Animate in
+              allElements.forEach((el, index) => {
+                  el.classList.remove('animate-out-up', 'animate-out-down');
+                  void el.offsetWidth; // Force reflow
+                  el.classList.add(index < 3 ? 'animate-in-up' : 'animate-in-down');
+              });
+          }, 500);
+      }
+
+      // Initial animation in
+      allElements.forEach((el, index) => {
+          el.classList.add(index < 3 ? 'animate-in-up' : 'animate-in-down');
+      });
+
+      // Start the animation loop
+      setInterval(animateText, 2000);
+  </script>
+
+
+    <section class="marquee-section">
+      
+        <div class="marquee-content">
+            <div class="marquee-item"><img src="images/1.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/2.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/3.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/4.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/5.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/6.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/7.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/8.png" alt="Client Logo"></div>
+        </div>
+        <div class="marquee-content">
+            <div class="marquee-item"><img src="images/1.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/2.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/3.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/4.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/5.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/6.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/7.png" alt="Client Logo"></div>
+            <div class="marquee-item"><img src="images/8.png" alt="Client Logo"></div>
+        </div>
+    </section>
+    
+    <section class="services" id="service">
+      <h1>our services</h1>
+      <div class="services-container">
+        <div class="service-list">
+            <div class="service-box">
+                <h2 class="service-title">BRANDING</h2>
+                <p class="service-description">Amplify your social media impact through expert management services. We devise captivating strategies for heightened engagement, follower growth, and extensive reach.</p>
+                <div class="dot-container">
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+                  <span class="single-dot"></span>
+              </div>
+            </div>
+            <div class="service-box">
+                <h2 class="service-title">SHOPIFY WEBSITE</h2>
+                <p class="service-description">All-encompassing support for strategy, post-production, operations, and analytics, driving channel growth and success.</p>
+                <div class="dot-container">
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                </div>
+            </div>
+            <div class="service-box">
+                <h2 class="service-title">CGI MARKETING</h2>
+                <p class="service-description">Elevate your brand with versatile, tailored multipurpose graphic design services: stunning visuals for marketing, branding, and social media.</p>
+                <div class="dot-container">
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                    <span class="single-dot"></span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+    <section class="Portfolio" id="Portfolio" >
+      <h1>our Portfolio</h1>
+      <div class="container1">
+        <div class="filters" style="display: flex;flex-wrap: wrap;">
+          <button class="filter-btn" data-filter="shopify">shopify websites</button>
+
+            <button class="filter-btn " data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="corporate">corporate websites</button>
+            <button class="filter-btn" data-filter="cgi">cgi marketing</button>
+            <button class="filter-btn" data-filter="product-photography">product photography</button>
+            <button class="filter-btn active" data-filter="all">ALL</button>
+
+        </div>
+        <div class="gallery">
+          <div class="card" data-category="corporate">
+            <h2 class="card-title">KRUPA CORPORATION</h2>
+            <p class="card-category">corporate website</p>
+            <p class="card-description">Krupa Corporation revolutionizes building material procurement with its B2B platform, offering efficient, cost-effective solutions and SaaS systems, while serving both retail and software needs in Andhra Pradesh.</p>
+            <a href="https://krupacorporation.com/" class="card-link" target="_blank">See project</a>
+        </div>
+
+            <div class="card" data-category="branding">
+                <h2 class="card-title">VANTAKALU FOODS</h2>
+                <p class="card-category">Branding</p>
+                <p class="card-description">VANTAKALU FOODS specializes in Telugu authentic, customizable pickles, offering a unique blend of traditional flavors tailored to your taste for a true regional experience.</p>
+                <a href="#" class="card-link" target="_blank">See project</a>
+            </div>
+            <div class="card" data-category="shopify">
+              <h2 class="card-title">NIRMALA FOODS</h2>
+              <p class="card-category">Shopify Website Designing</p>
+              <p class="card-description">At Nirmala Foods, we craft quality products, from tangy pickles to aromatic podis, using the finest ingredients for unmatched flavor and freshness. </p>
+              <a href="https://nirmalafoods.com/" class="card-link" target="_blank">See project</a>
+          </div>
+            <div class="card" data-category="branding">
+                <h2 class="card-title">TEJA FOODS</h2>
+                <p class="card-category">Branding</p>
+                <p class="card-description">
+                  TEJA FOODS offers authentic Guntur pickles, renowned for their bold, spicy flavors and traditional preparation, bringing a taste of Guntur’s rich culinary heritage to your table.</p>
+                <a href="https://tejapickles.com/" class="card-link" target="_blank">See project</a>
+            </div>
+            
+            <div class="card" data-category="shopify">
+              <h2 class="card-title">SIKKOLE</h2>
+              <p class="card-category">Shopify Website Designing</p>
+              <p class="card-description">Sikkole showcases the rich culinary heritage of Srikakulam, offering authentic foods that capture the region's traditional flavors and exceptional quality in every bite.</p>
+              <a href="#" class="card-link" target="_blank">See project</a>
+          </div>
+          <div class="card" data-category="shopify">
+            <h2 class="card-title">GOLDEN LADY</h2>
+            <p class="card-category">Shopify Website Designing</p>
+            <p class="card-description">Golden Lady is a natural spices brand offering premium, authentic spices, crafted from the finest ingredients to enhance your culinary creations with rich, vibrant flavors.</p>
+            <a href="https://goldenladynaturals.com/" class="card-link" target="_blank">See project</a>
+          </div>
+
+          <div class="card" data-category="shopify">
+            <h2 class="card-title">CASEANDCLOTH</h2>
+            <p class="card-category">Shopify Website Designing</p>
+            <p class="card-description">CASEANDCLOTH offers stylish mobile cases and premium clothing, blending fashion and function to provide top-quality accessories and apparel that elevate your personal style.</p>
+            <a href="#" class="card-link" target="_blank">See project</a>
+        </div>
+        <div class="card" data-category="shopify">
+          <h2 class="card-title">KRUPA YUMZY</h2>
+          <p class="card-category">Shopify Website Designing</p>
+          <p class="card-description">Krupa Yumzy delivers authentic Indian flavors with high-quality pickles and spices, crafted with care from the finest ingredients for a celebration of vibrant, regional tastes.</p>
+          <a href="https://www.krupayumzy.com/" class="card-link" target="_blank">See project</a>
+      </div>
+        <div class="card" data-category="cgi">
+          <h2 class="card-title">HUSLE LIFESTYLE</h2>
+          <p class="card-category">CGI marketing</p>
+          <p class="card-description">"Husle Lifestyle" signifies hard work and dedication, embodying a brand ethos of relentless pursuit of goals, reflected in their mobile accessories and shoes.</p>
+          <a href="https://www.huslelifestyle.com/ " class="card-link" target="_blank">See project</a>
+        </div>
+          <div class="card" data-category="product-photography">
+          <h2 class="card-title">GOLDEN LADY</h2>
+          <p class="card-category">Product photography</p>
+          <p class="card-description">Golden Lady is a natural spices brand offering premium, authentic spices, crafted from the finest ingredients to enhance your culinary creations with rich, vibrant flavors.</p>
+          <a href="https://goldenladynaturals.com/" class="card-link" target="_blank">See project</a>
+        </div>
+        <div class="card" data-category="shopify">
+          <h2 class="card-title">VANTAKALU FOODS</h2>
+          <p class="card-category">Shopify Website Designing</p>
+          <p class="card-description">VANTAKALU FOODS specializes in Telugu authentic, customizable pickles, offering a unique blend of traditional flavors tailored to your taste for a true regional experience.</p>
+          <a href="#" class="card-link" target="_blank">See project</a>
+      </div>
+        <div class="card" data-category="product-photography">
+          <h2 class="card-title">SIKKOLE</h2>
+          <p class="card-category">Product Photography</p>
+          <p class="card-description">Sikkole showcases the rich culinary heritage of Srikakulam, offering authentic foods that capture the region's traditional flavors and exceptional quality in every bite.</p>
+          <a href="#" class="card-link" target="_blank">See project</a>
+        </div>
+        </div>
+    </div>
+    <button id="loadMoreBtn" class="load-more-btn btn-secondary" style="margin-top: 50px;">Load More</button>
+    <script>
+                const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.card');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+        let currentlyShown = 6;
+        const increment = 6;
+
+        function showCards(filter = 'all') {
+            let shown = 0;
+            cards.forEach((card, index) => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    if (shown < currentlyShown) {
+                        card.style.display = 'block';
+                        shown++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide "Load More" button
+            if (shown < cards.length && filter === 'all') {
+                loadMoreBtn.style.display = 'block';
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                currentlyShown = 6; // Reset to initial count when changing filters
+                showCards(filter);
+            });
+        });
+
+        loadMoreBtn.addEventListener('click', () => {
+            currentlyShown += increment;
+            showCards();
+        });
+
+        // Initial display
+        showCards();
+    </script>
+    </section>
+
+   
+
+
+    <section class="six">
+  <div class="one">
+    <h1 class="headi" style="text-align: center; color: white; padding: 20px">FEATURES INCLUDED IN <br />EVERY WEBSITE WE BUILD</h1>
+  </div>
+  <div class="twoo">
+   
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" style="display: flex;justify-content: center;align-items: center;gap: 20px;" > <img src="images/graph.svg" alt="">HIGH CONVERTING DESIGN</h2>
+      <p class="service-description">Our designs combine aesthetics and usability, offering visually stunning, user-friendly solutions that enhance both appearance and functionality.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+    </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+    <h2 class="service-title" style="display: flex;justify-content: center;align-items: center;gap: 20px;" ><img src="images/pen.svg" alt="">ON-POINT CONTENT</h2>
+    <p class="service-description">We ensure a consistent brand voice throughout all content, fostering brand recognition and trust. This approach helps in building a strong, reliable identity that resonates with our audience.</p>
+    <div class="dot-container">
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+      <span class="single-dot"></span>
+    </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" style="display: flex;justify-content: center;align-items: center;gap: 20px;"  ><img src="images/gallery-dark.svg" alt=""> BREATH TAKING GRAPHICS</h2>
+      <p class="service-description">AI empowers us to create innovative banner ideas that are unattainable with traditional design methods, allowing for unique and cutting-edge designs that stand out and captivate audiences.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" style="display: flex;justify-content: center;align-items: center;gap: 20px;" ><img src="images/wallet.svg" alt=""> PAYMENT INTEGRATION</h2>
+      <p class="service-description">Partnered with Phone Pe, we guarantee secure and seamless transactions for your website customers, providing a reliable and efficient payment experience that enhances trust and convenience.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" style="display: flex;justify-content: center;align-items: center;gap: 20px;" ><img src="images/cart.svg" alt=""> SHIPPING SETUP</h2>
+      <p class="service-description">We collaborate with shipping partners to handle product deliveries to your customers, ensuring a smooth and efficient process that enhances your service and customer satisfaction.</p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    <div class="service-box1" style="height: 10REM;">
+      <h2 class="service-title" style="display: flex;justify-content: center;align-items: center;gap: 20px;" ><img src="images/extensions-dark.svg" alt=""> ECOMMERCE PLUGINS</h2>
+      <p class="service-description">We utilize industry-standard plugins to equip your website with features designed to boost sales, enhancing functionality and optimizing your online business performance.
+      </p>
+      <div class="dot-container">
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+        <span class="single-dot"></span>
+     </div>
+    </div>
+    
+    <!-- <div class="box">
+      
+   
+    
+    <div class="box">
+      <div class="in" style="display: flex;gap: 10px;width: 100%;justify-content: space-evenly;">
+        <img src="images/extensions-dark.svg" alt="">
+        <h4>Ecommerce Plugins</h4>
+       </div>
+      
+      <p>
+        We use industry standard plugins to ensure your website is enabled with features meant to increase sales.
+      </p>
+    </div> -->
+  </div>
+</section>
+
+
+    <section class="team-section" id="team" >
+      <h3 class="team-heading" style="text-align: center;">founders
+  
+      </h3>
+    
+        <div class="team-container" style="width: 100%;position: relative;">
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="images/co-founder-vfx.png" alt="John Doe">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>M Venu Gupta</h3>
+                        <p>Co-Founder</p>
+                        <!-- <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-member-image">
+                        <img src="images/co-founder.png" alt="Jane Smith">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>M Sai Srinivas</h3>
+                        <p>Co-Founder</p>
+                        <!-- <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+    <section class="ten" id="price">
+        <h1 class="team-heading" style="color: white;">Get An Instant Quotation Now</h1>
+        <div class="ninee">
+          <div class="price-card">
+            <div class="one">
+              <h1>Website Redesign Cost Calculator</h1>
+            </div>
+            <div class="tow">
+              <button class="choose-package">Choose Your Package</button>
+              <div class="package-buttons">
+                <button class="package-btn" onclick="updatePrice(this, 10000)">
+                  2 Redesign Concepts
+                </button>
+                <button class="package-btn" onclick="updatePrice(this, 15000)">
+                  3 Redesign Concepts
+                </button>
+                <button class="package-btn" onclick="updatePrice(this, 20000)">
+                  4 Redesign Concepts
+                </button>
+              </div>
+              <div class="price-display">
+                <span>Total Cost</span><br />
+                <span id="price">₹0</span>
+              </div>
+              <div class="footer">
+                <button class="foot">View Details</button>
+                <button class="foot">Contact Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="price-card">
+            <div class="one">
+              <h1>Custom Website Development</h1>
+            </div>
+            <div class="tow">
+              <button class="choose-package">Choose Your Package</button>
+              <div class="package-buttons">
+                <button class="package-btn" onclick="updatePrice(this, 25000)">
+                  Basic Package
+                </button>
+                <button class="package-btn" onclick="updatePrice(this, 35000)">
+                  Standard Package
+                </button>
+                <button class="package-btn" onclick="updatePrice(this, 50000)">
+                  Premium Package
+                </button>
+              </div>
+              <div class="price-display">
+                <span>Total Cost</span><br />
+                <span id="price">₹0</span>
+              </div>
+              <div class="footer">
+                <button class="foot">View Details</button>
+                <button class="foot">Contact Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+  <script>
+    function updatePrice(button, price) {
+    const priceElement = button.closest(".price-card").querySelector("#price");
+    priceElement.textContent = "₹" + price;
+  
+    // Remove 'active' class from all buttons
+    const packageButtons = button.closest(".package-buttons").querySelectorAll(".package-btn");
+    packageButtons.forEach(btn => btn.classList.remove("active"));
+  
+    // Add 'active' class to the clicked button
+    button.classList.add("active");
+  }
+  </script>
+
+
+
+<div class="contact-container" id="contact">
+ <div class="head">
+  <h1>CONTACT US</h1>
+  <p class="subheading">LET'S <span class="handwritten">Talk About Ideas</span></p>
+  
+ </div>
+
+  <div class="contact-content" style="height: fit-content;">
+    <div class="contact-info"  style="display: flex;align-items: center;justify-content: center;flex-direction: column;gap: 30px;">
+      <div class="contact-item"style="width: 50%;display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top:0 ;">
+        
+        <div class="info" style="font-size: larger;text-align: center;">
+          
+            
+            <h3><i class="fa-solid fa-envelope fa-lg" style="color: #000000;"></i>&nbsp &nbspEmail</h3>
+        
+          <p>contact@brandingjester.agency</p>
+          <p>founder@brandingjester.agency</p>
+        </div>
+      </div>
+      
+        
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+
+
+  <section class="faq">
+
+
+    <div class="faq-container">
+      <h1>Answers to Your Most Common Questions</h1>
+      <p class="subtitle">Explore our FAQ section to find clear and concise answers about our services, processes, and more.</p>
+      
+      <div class="faq-item">
+          <div class="faq-question">How long does it take to create a website?</div>
+          <div class="faq-answer">The time required varies depending on the complexity of the project. A simple website might take 2-4 weeks, while a more complex one could take 2-3 months or more.</div>
+      </div>
+      
+      <div class="faq-item">
+          <div class="faq-question">What are the key steps involved in the website development process?</div>
+          <div class="faq-answer">The key steps typically include planning, design, development, content creation, testing, and launch. Each phase is crucial for creating a successful website.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">Can you integrate ecommerce functionality into my website?</div>
+          <div class="faq-answer">Yes, we can integrate various ecommerce solutions depending on your needs, from simple payment gateways to full-fledged online stores with inventory management.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">Do you provide website maintenance services after launch?</div>
+          <div class="faq-answer">Yes, we offer ongoing maintenance packages to ensure your website remains secure, up-to-date, and performs optimally after launch.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">What factors determine the cost of building a custom website?</div>
+          <div class="faq-answer">Factors include the site's complexity, number of pages, custom functionality, design requirements, and whether you need content creation services.</div>
+      </div>
+
+      <div class="faq-item">
+          <div class="faq-question">Do you optimize websites for search engines (SEO)?</div>
+          <div class="faq-answer">Yes, we implement on-page SEO best practices during development and can provide more comprehensive SEO services if needed.</div>
+      </div>
+  </div>
+</section>
+
+  <script>
+      document.querySelectorAll('.faq-item').forEach(item => {
+          item.addEventListener('click', () => {
+              document.querySelectorAll('.faq-item').forEach(otherItem => {
+                  if (otherItem !== item) {
+                      otherItem.classList.remove('active');
+                  }
+              });
+              item.classList.toggle('active');
+          });
+      });
+  </script>
+  
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  const icon = item.querySelector('.faq-icon');
+  
+  question.addEventListener('click', () => {
+    answer.classList.toggle('open');
+    icon.classList.toggle('open');
+  });
+  });
+  </script>
+    
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+    <footer style="background-color: #FFD700;padding: 30px;display: flex;justify-content: space-around;align-items: center;">
+      <div class="social icons" style="display: flex;gap: 30px;">
+        <a href="" class="social_links"><i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i></a>
+        <a href="" class="social_links"><i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i></a>
+        <a href="" class="social_links"><i class="fa-solid fa-envelope fa-lg" style="color: #000000;"></i></i></a>
+      </div>
+      <div class="rights">
+        <p style="color: black;">© 2024 Branding Jester
+          ALL RIGHTS RESERVED</p>
+      </div>
+      <div></div>
+    </footer>
+</body>
+</html>
