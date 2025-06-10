@@ -370,20 +370,20 @@ h1 {
 }
 
 .avatar1 {
-  background-image: url("./designs & logo's/company logos/logo6.png");
+  background-image: url("./images/designs & logo's/company logos/logo6.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .avatar2 {
-  background-image: url("./designs & logo's/company logos/logo7.png");
+  background-image: url("./images/designs & logo's/company logos/logo7.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
 }
 .avatar3 {
-  background-image: url("./designs & logo's/company logos/logo8.png");
+  background-image: url("./images/designs & logo's/company logos/logo8.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -601,52 +601,52 @@ h1 {
 }
 
 .logo_scroll .logo1 {
-  background-image: url("./designs & logo's/company logos/logo1.png");
+  background-image: url("./images/designs & logo's/company logos/logo1.png");
 }
 .logo_scroll .logo2 {
-  background-image: url("./designs & logo's/company logos/logo2.png");
+  background-image: url("./images/designs & logo's/company logos/logo2.png");
 }
 .logo_scroll .logo3 {
-  background-image: url("./designs & logo's/company logos/logo3.png");
+  background-image: url("./images/designs & logo's/company logos/logo3.png");
 }
 .logo_scroll .logo4 {
-  background-image: url("./designs & logo's/company logos/logo4.png");
+  background-image: url("./images/designs & logo's/company logos/logo4.png");
 }
 .logo_scroll .logo5 {
-  background-image: url("./designs & logo's/company logos/logo5.png");
+  background-image: url("./images/designs & logo's/company logos/logo5.png");
 }
 .logo_scroll .logo6 {
-  background-image: url("./designs & logo's/company logos/logo6.png");
+  background-image: url("./images/designs & logo's/company logos/logo6.png");
 }
 .logo_scroll .logo7 {
-  background-image: url("./designs & logo's/company logos/logo7.png");
+  background-image: url("./images/designs & logo's/company logos/logo7.png");
 }
 .logo_scroll .logo8 {
-  background-image: url("./designs & logo's/company logos/logo8.png");
+  background-image: url("./images/designs & logo's/company logos/logo8.png");
 }
 .logo_scroll .logo9 {
-  background-image: url("./designs & logo's/company logos/logo9.png");
+  background-image: url("./images/designs & logo's/company logos/logo9.png");
 }
 .logo_scroll .logo10 {
-  background-image: url("./designs & logo's/company logos/logo10.png");
+  background-image: url("./images/designs & logo's/company logos/logo10.png");
 }
 .logo_scroll .logo11 {
-  background-image: url("./designs & logo's/company logos/logo11.png");
+  background-image: url("./images/designs & logo's/company logos/logo11.png");
 }
 .logo_scroll .logo12 {
-  background-image: url("./designs & logo's/company logos/logo12.png");
+  background-image: url("./images/designs & logo's/company logos/logo12.png");
 }
 .logo_scroll .logo13 {
-  background-image: url("./designs & logo's/company logos/logo13.png");
+  background-image: url("./images/designs & logo's/company logos/logo13.png");
 }
 .logo_scroll .logo14 {
-  background-image: url("./designs & logo's/company logos/logo14.png");
+  background-image: url("./images/designs & logo's/company logos/logo14.png");
 }
 .logo_scroll .logo15 {
-  background-image: url("./designs & logo's/company logos/logo15.png");
+  background-image: url("./images/designs & logo's/company logos/logo15.png");
 }
 .logo_scroll .logo16 {
-  background-image: url("./designs & logo's/company logos/logo16.jpg");
+  background-image: url("./images/designs & logo's/company logos/logo16.jpg");
 }
 
 /* ///////////////////////////updatedservice\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -952,31 +952,31 @@ h1 {
 }
 
 .portfolio-content .img .one {
-  background-image: url("./designs & logo's/krupacorp.png");
+  background-image: url("./images/designs & logo's/krupacorp.png");
 }
 .portfolio-content .img .two {
-  background-image: url("./designs & logo's/temp project img/golden lady img.png");
+  background-image: url("./images/designs & logo's/temp project img/golden lady img.png");
 }
 .portfolio-content .img .three {
-  background-image: url("./designs & logo's/temp project img/mawa foods img.png");
+  background-image: url("./images/designs & logo's/temp project img/img1.png");
 }
 .portfolio-content .img .four {
-  background-image: url("./designs & logo's/temp project img/nirmala project img.png");
+  background-image: url("./images/designs & logo's/temp project img/img5.png");
 }
 .portfolio-content .img .five {
-  background-image: url("./designs & logo's/temp project img/golden lady img.png");
+  background-image: url("./images/designs & logo's/temp project img/golden lady img.png");
 }
 .portfolio-content .img .six {
-  background-image: url("./designs & logo's/sikkole img.png");
+  background-image: url("./images/designs & logo's/sikkole img.png");
 }
 .portfolio-content .img .seven {
-  background-image: url("./designs & logo's/snapdrive img.png");
+  background-image: url("./images/designs & logo's/snapdrive img.png");
 }
 .portfolio-content .img .eight {
-  background-image: url("./designs & logo's/newwave consultancy img.png");
+  background-image: url("./images/designs & logo's/newwave consultancy img.png");
 }
 .portfolio-content .img .nine {
-  background-image: url("./designs & logo's/happet img.png");
+  background-image: url("./images/designs & logo's/happet img.png");
 }
 
 .portfolio-content .img .actual_img {
@@ -1907,7 +1907,7 @@ section.contact-form {
   color: white;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  background-image: url("./designs & logo's/brandingjester_logo.png");
+  background-image: url("./images/designs & logo's/brandingjester_logo.png");
   background-position: center;
   background-size: cover;
   width: 80px;
